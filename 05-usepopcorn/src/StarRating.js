@@ -19,6 +19,7 @@ StarRating.propTypes = {
   size: PropTypes.number,
   messages: PropTypes.array,
   className: PropTypes.string,
+  disabled: PropTypes.bool,
   onSetRating: PropTypes.func
 }
 
@@ -28,10 +29,11 @@ export default function StarRating({
   size = 48,
   className = '',
   messages = [],
-  defaultValue = 0,
+  value = 0,
+  disabled = false,
   onSetRating
 }) {
-  const [rating, setRating] = useState(defaultValue)
+  const [rating, setRating] = useState(value)
   const [tempRating, setTempRating] = useState(0)
 
   function handleRating(rating) {
@@ -52,12 +54,15 @@ export default function StarRating({
         {Array.from({ length: maxRating }, (_, i) => (
           <Star
             key={i}
-            full={tempRating ? tempRating >= i + 1 : rating >= i + 1}
-            onRate={() => handleRating(i + 1)}
-            onHoverIn={() => setTempRating(i + 1)}
-            onHoverOut={() => setTempRating(0)}
+            full={
+              !disabled && tempRating ? tempRating >= i + 1 : rating >= i + 1
+            }
+            onRate={() => !disabled && handleRating(i + 1)}
+            onHoverIn={() => !disabled && setTempRating(i + 1)}
+            onHoverOut={() => !disabled && setTempRating(0)}
             color={color}
             size={size}
+            disabled={disabled}
           />
         ))}
       </div>
@@ -70,13 +75,13 @@ export default function StarRating({
   )
 }
 
-function Star({ full, onRate, onHoverIn, onHoverOut, color, size }) {
+function Star({ full, onRate, onHoverIn, onHoverOut, color, size, disabled }) {
   const starStyle = {
     width: size,
     height: size,
     color: color,
     display: 'block',
-    cursor: 'pointer'
+    cursor: `${!disabled ? 'pointer' : 'unset'}`
   }
 
   return (
