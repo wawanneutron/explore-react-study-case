@@ -88,13 +88,20 @@ export default function App() {
     setWatched((watched) => [...watched, movie])
   }
 
+  function handleDeleteWatached(id) {
+    setWatched((watched) => watched.filter((movie) => movie.imdbID !== id))
+  }
+
   useEffect(() => {
-    async function fetchMovies() {
+    const controller = new AbortController()
+
+    const fetchMovies = async () => {
       try {
         setIsLoading(true)
         setError('')
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`
+          `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+          { signal: controller.signal }
         )
 
         if (!res.ok) {
@@ -105,11 +112,13 @@ export default function App() {
         if (data.Response === 'False') throw new Error('Movie not found')
 
         setMovies(data.Search)
+        setError('')
       } catch (err) {
         console.error(err.message)
         setError(err.message)
       } finally {
         setIsLoading(false)
+        controller.abort()
       }
     }
 
@@ -120,6 +129,7 @@ export default function App() {
     }
 
     fetchMovies()
+    handleCloseMovie()
   }, [query])
 
   return (
@@ -149,7 +159,10 @@ export default function App() {
           ) : (
             <>
               <WatchedSummary watched={watched} />
-              <WatchedMovieList watched={watched} />
+              <WatchedMovieList
+                watched={watched}
+                onDeleteWatched={handleDeleteWatached}
+              />
             </>
           )}
         </Box>
@@ -277,30 +290,46 @@ function WatchedSummary({ watched }) {
   )
 }
 
-function WatchedMovieList({ watched }) {
+function WatchedMovieList({ watched, onDeleteWatched }) {
   return (
     <ul className="list">
       {watched.map((movie) => (
-        <li key={movie.imdbID}>
-          <img src={movie.poster} alt={`${movie.title} poster`} />
-          <h3>{movie.title}</h3>
-          <div>
-            <p>
-              <span>⭐️</span>
-              <span>{movie.imdbRating}</span>
-            </p>
-            <p>
-              <span>🌟</span>
-              <span>{movie.userRating}</span>
-            </p>
-            <p>
-              <span>⏳</span>
-              <span>{movie.runtime} min</span>
-            </p>
-          </div>
-        </li>
+        <WatchedMovie
+          movie={movie}
+          onDeleteWatched={onDeleteWatched}
+          key={movie.imdbID}
+        />
       ))}
     </ul>
+  )
+}
+
+function WatchedMovie({ movie, onDeleteWatched }) {
+  return (
+    <li>
+      <img src={movie.poster} alt={`${movie.title} poster`} />
+      <h3>{movie.title}</h3>
+      <div>
+        <p>
+          <span>⭐️</span>
+          <span>{movie.imdbRating}</span>
+        </p>
+        <p>
+          <span>🌟</span>
+          <span>{movie.userRating}</span>
+        </p>
+        <p>
+          <span>⏳</span>
+          <span>{movie.runtime} min</span>
+        </p>
+        <button
+          className="btn-delete"
+          onClick={() => onDeleteWatched(movie.imdbID)}
+        >
+          X
+        </button>
+      </div>
+    </li>
   )
 }
 
@@ -358,6 +387,29 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 
     getMovieDetails()
   }, [selectedId])
+
+  useEffect(() => {
+    if (!title) return
+    document.title = `Movie | ${title}`
+
+    return () => {
+      document.title = 'usePopCorn App'
+    }
+  }, [title])
+
+  useEffect(() => {
+    function callback(e) {
+      if (e.code === 'Escape') {
+        onCloseMovie()
+      }
+    }
+
+    document.addEventListener('keydown', callback)
+
+    return () => {
+      document.removeEventListener('keydown', callback)
+    }
+  }, [onCloseMovie])
 
   return (
     <div className="details">
