@@ -1,0 +1,21 @@
+.nav {
+  background-color: salmon;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav :global(.active) {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+:global(.test) {
+  background-color: red;
+}
