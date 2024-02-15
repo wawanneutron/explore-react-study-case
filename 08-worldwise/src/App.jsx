@@ -18,5 +18,5 @@ export default function App() {
 }
 
 /*
-#untuk membuat function ketik rfc
+#for make function write rfc
 */
