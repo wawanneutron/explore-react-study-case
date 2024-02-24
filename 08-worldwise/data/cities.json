@@ -1,52 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "cityName": "Moscow",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2024-02-24T09:44:14.127Z",
+      "notes": "enjoy trip",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "55.7504255462295",
+        "lng": "37.617700432403154"
       },
-      "id": 73930385
+      "id": 1
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "cityName": "Riyadh",
+      "country": "Saudi Arabia",
+      "emoji": "🇸🇦",
+      "date": "2024-02-24T09:46:02.587Z",
+      "notes": "enjoy trip",
+      "position": {
+        "lat": "24.628015716794238",
+        "lng": "47.131192075002964"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Negara Biadab Setan",
+      "country": "Israel",
+      "emoji": "🇮🇱",
+      "date": "2024-02-24T09:54:36.724Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "30.810845200063326",
+        "lng": "34.760413599906265"
       },
-      "id": 17806751
+      "id": 3
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Free Palestine Save Gaza",
+      "country": "Palestine, State of",
+      "emoji": "🇵🇸",
+      "date": "2024-02-24T09:55:02.312Z",
+      "notes": "We Love You",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "31.513087236139842",
+        "lng": "34.453803516387644"
       },
-      "id": 98443197
-    },
-    {
-      "cityName": "Nijar",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-04-03T07:47:59.202Z",
-      "notes": "",
-      "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
-      },
-      "id": 98443198
+      "id": 4
     }
   ]
 }
