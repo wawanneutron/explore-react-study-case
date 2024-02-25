@@ -25,52 +25,28 @@
       "id": 3
     },
     {
-      "cityName": "Free Palestine Save Gaza",
+      "id": "6fe56aec-c26a-4ee3-81e3-c53c85c7afbc",
+      "cityName": "Gaza - Palestine",
       "country": "Palestine, State of",
       "emoji": "🇵🇸",
-      "date": "2024-02-24T09:55:02.312Z",
-      "notes": "We Love You",
+      "date": "2024-02-25T06:55:03.304Z",
+      "notes": "",
       "position": {
-        "lat": "31.513087236139842",
-        "lng": "34.453803516387644"
-      },
-      "id": 4
+        "lat": "31.5162190836272",
+        "lng": "34.452650891550704"
+      }
     },
     {
-      "cityName": "Jakarta",
+      "id": "4614f625-6d3c-4a2a-ac99-22fac6419e41",
+      "cityName": "Tigaraksa - Indonesia",
       "country": "Indonesia",
       "emoji": "🇮🇩",
-      "date": "2024-02-25T06:47:54.881Z",
+      "date": "2024-02-25T06:57:32.284Z",
       "notes": "",
       "position": {
-        "lat": "-6.184163370972553",
-        "lng": "106.82037247638259"
-      },
-      "id": 5
-    },
-    {
-      "cityName": "London",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "🇬🇧",
-      "date": "2024-02-25T06:48:09.735Z",
-      "notes": "",
-      "position": {
-        "lat": "51.50878673500144",
-        "lng": "-0.12025484684453415"
-      },
-      "id": 6
-    },
-    {
-      "cityName": "Moscow",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2024-02-25T06:48:58.079Z",
-      "notes": "",
-      "position": {
-        "lat": "55.75340487597376",
-        "lng": "37.61939327867652"
-      },
-      "id": 7
+        "lat": "-6.251474277752173",
+        "lng": "106.46960903356121"
+      }
     }
   ]
 }
