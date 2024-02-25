@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Moscow",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2024-02-24T09:44:14.127Z",
-      "notes": "enjoy trip",
-      "position": {
-        "lat": "55.7504255462295",
-        "lng": "37.617700432403154"
-      },
-      "id": 1
-    },
-    {
       "cityName": "Riyadh",
       "country": "Saudi Arabia",
       "emoji": "🇸🇦",
@@ -47,6 +35,42 @@
         "lng": "34.453803516387644"
       },
       "id": 4
+    },
+    {
+      "cityName": "Jakarta",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2024-02-25T06:47:54.881Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.184163370972553",
+        "lng": "106.82037247638259"
+      },
+      "id": 5
+    },
+    {
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-02-25T06:48:09.735Z",
+      "notes": "",
+      "position": {
+        "lat": "51.50878673500144",
+        "lng": "-0.12025484684453415"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Moscow",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2024-02-25T06:48:58.079Z",
+      "notes": "",
+      "position": {
+        "lat": "55.75340487597376",
+        "lng": "37.61939327867652"
+      },
+      "id": 7
     }
   ]
 }

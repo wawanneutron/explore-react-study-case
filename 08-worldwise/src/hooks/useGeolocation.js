@@ -3,8 +3,8 @@ import { useState } from 'react'
 export function useGeolocation() {
   const [isLoading, setIsLoading] = useState(false)
   const [position, setPosition] = useState({
-    lat: 55.755826,
-    lng: 37.6173
+    lat: 40,
+    lng: 0
   })
   const [error, setError] = useState(null)
 
