@@ -1,52 +1,40 @@
 {
   "cities": [
     {
-      "cityName": "Moscow",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2024-02-24T09:44:14.127Z",
-      "notes": "enjoy trip",
-      "position": {
-        "lat": "55.7504255462295",
-        "lng": "37.617700432403154"
-      },
-      "id": 1
-    },
-    {
-      "cityName": "Riyadh",
-      "country": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "date": "2024-02-24T09:46:02.587Z",
-      "notes": "enjoy trip",
-      "position": {
-        "lat": "24.628015716794238",
-        "lng": "47.131192075002964"
-      },
-      "id": 2
-    },
-    {
-      "cityName": "Negara Biadab Setan",
-      "country": "Israel",
-      "emoji": "🇮🇱",
-      "date": "2024-02-24T09:54:36.724Z",
+      "id": "e4d49907-e05f-460e-92ea-5b2d556b6114",
+      "cityName": "Tangerang",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2024-02-26T07:38:30.631Z",
       "notes": "",
       "position": {
-        "lat": "30.810845200063326",
-        "lng": "34.760413599906265"
-      },
-      "id": 3
+        "lat": "-6.1758910282475075",
+        "lng": "106.63148265624851"
+      }
     },
     {
-      "cityName": "Free Palestine Save Gaza",
-      "country": "Palestine, State of",
-      "emoji": "🇵🇸",
-      "date": "2024-02-24T09:55:02.312Z",
-      "notes": "We Love You",
+      "id": "6882b3f9-adf4-427a-9542-7d5fe3831bc7",
+      "cityName": "Pakuanratu",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2024-02-26T08:32:48.000Z",
+      "notes": "",
       "position": {
-        "lat": "31.513087236139842",
-        "lng": "34.453803516387644"
-      },
-      "id": 4
+        "lat": "-4.494186844260786",
+        "lng": "104.67318329288449"
+      }
+    },
+    {
+      "id": "cfcc4115-881c-4c1c-9743-d53246fc69fc",
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2024-02-27T04:46:30.455Z",
+      "notes": "",
+      "position": {
+        "lat": "35.69425242859711",
+        "lng": "139.69747520672698"
+      }
     }
   ]
 }
