@@ -1,51 +1,51 @@
 {
   "cities": [
     {
-      "cityName": "Riyadh",
-      "country": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "date": "2024-02-24T09:46:02.587Z",
-      "notes": "enjoy trip",
-      "position": {
-        "lat": "24.628015716794238",
-        "lng": "47.131192075002964"
-      },
-      "id": 2
-    },
-    {
-      "cityName": "Negara Biadab Setan",
-      "country": "Israel",
-      "emoji": "🇮🇱",
-      "date": "2024-02-24T09:54:36.724Z",
+      "id": "e4d49907-e05f-460e-92ea-5b2d556b6114",
+      "cityName": "Tangerang",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2024-02-26T07:38:30.631Z",
       "notes": "",
       "position": {
-        "lat": "30.810845200063326",
-        "lng": "34.760413599906265"
-      },
-      "id": 3
-    },
-    {
-      "id": "6fe56aec-c26a-4ee3-81e3-c53c85c7afbc",
-      "cityName": "Gaza - Palestine",
-      "country": "Palestine, State of",
-      "emoji": "🇵🇸",
-      "date": "2024-02-25T06:55:03.304Z",
-      "notes": "",
-      "position": {
-        "lat": "31.5162190836272",
-        "lng": "34.452650891550704"
+        "lat": "-6.1758910282475075",
+        "lng": "106.63148265624851"
       }
     },
     {
-      "id": "4614f625-6d3c-4a2a-ac99-22fac6419e41",
-      "cityName": "Tigaraksa - Indonesia",
+      "id": "6882b3f9-adf4-427a-9542-7d5fe3831bc7",
+      "cityName": "Pakuanratu",
       "country": "Indonesia",
       "emoji": "🇮🇩",
-      "date": "2024-02-25T06:57:32.284Z",
+      "date": "2024-02-26T08:32:48.000Z",
       "notes": "",
       "position": {
-        "lat": "-6.251474277752173",
-        "lng": "106.46960903356121"
+        "lat": "-4.494186844260786",
+        "lng": "104.67318329288449"
+      }
+    },
+    {
+      "id": "3ff8f99e-8ee2-40d2-94b7-1e1e4a0f26bc",
+      "cityName": "Kecamatan Linge",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2024-02-26T08:33:21.890Z",
+      "notes": "",
+      "position": {
+        "lat": "4.324653981529836",
+        "lng": "96.9445148973881"
+      }
+    },
+    {
+      "id": "cfcc4115-881c-4c1c-9743-d53246fc69fc",
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2024-02-27T04:46:30.455Z",
+      "notes": "",
+      "position": {
+        "lat": "35.69425242859711",
+        "lng": "139.69747520672698"
       }
     }
   ]

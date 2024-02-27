@@ -11,7 +11,7 @@ CityList.propTypes = {
 }
 
 export default function CityList() {
-  const { cities, isLoading } = useCities()
+  const { cities, isLoading, error } = useCities()
 
   if (isLoading) return <Spinner />
 
@@ -19,6 +19,8 @@ export default function CityList() {
     return (
       <Message message="Add your first city by clicking on a city on the map" />
     )
+
+  if (error) return <Message message={error} />
 
   return (
     <ul className={styles.cityList}>
