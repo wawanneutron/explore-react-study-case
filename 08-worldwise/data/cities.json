@@ -25,18 +25,6 @@
       }
     },
     {
-      "id": "3ff8f99e-8ee2-40d2-94b7-1e1e4a0f26bc",
-      "cityName": "Kecamatan Linge",
-      "country": "Indonesia",
-      "emoji": "🇮🇩",
-      "date": "2024-02-26T08:33:21.890Z",
-      "notes": "",
-      "position": {
-        "lat": "4.324653981529836",
-        "lng": "96.9445148973881"
-      }
-    },
-    {
       "id": "cfcc4115-881c-4c1c-9743-d53246fc69fc",
       "cityName": "Tokyo",
       "country": "Japan",
