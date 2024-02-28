@@ -1,7 +1,4 @@
-import { useQuiz } from '../contexts/QuizContext'
-
-export default function Options({ question }) {
-  const { answer, dispatch } = useQuiz()
+export default function Options({ question, answer, dispatch }) {
   const hasAnswer = answer !== null
 
   return (
