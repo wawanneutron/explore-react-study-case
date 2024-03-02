@@ -98,6 +98,7 @@ function Posts() {
   return (
     <section>
       <List posts={posts} />
+      {/* <Test /> */}
     </section>
   )
 }
@@ -122,7 +123,7 @@ function Archive() {
 
   const [posts] = useState(() =>
     // 💥 WARNING: This might make your computer slow! Try a smaller `length` first
-    Array.from({ length: 100 }, () => createRandomPost())
+    Array.from({ length: 30000 }, () => createRandomPost())
   )
 
   const [showArchive, setShowArchive] = useState(false)
