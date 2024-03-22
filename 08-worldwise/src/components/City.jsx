@@ -14,7 +14,7 @@ const formatDate = (date) =>
   }).format(new Date(date))
 
 export default function City() {
-  const { getCity, currentCity, loading } = useCities()
+  const { getCity, currentCity, isLoading } = useCities()
   const { id } = useParams()
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function City() {
 
   const { cityName, emoji, date, notes } = currentCity
 
-  if (loading) return <Spinner />
+  if (isLoading) return <Spinner />
 
   return (
     <div className={styles.city}>
