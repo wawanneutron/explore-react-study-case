@@ -3,7 +3,7 @@ import Home from './ui/Home'
 import Menu, { Loader as menuLoader } from './features/menu/Menu'
 import Cart from './features/cart/Cart'
 import CreateOrder, {
-  Action as createOrderAction
+  Action as createOrderAction,
 } from './features/order/CreateOrder'
 import Order, { Loader as orderLoader } from './features/order/Order'
 import AppLayout from './ui/AppLayout'
@@ -17,31 +17,31 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
       },
       {
         path: '/menu',
         element: <Menu />,
         loader: menuLoader,
-        errorElement: <Error />
+        errorElement: <Error />,
       },
       {
         path: '/cart',
-        element: <Cart />
+        element: <Cart />,
       },
       {
         path: '/order/new',
         element: <CreateOrder />,
-        action: createOrderAction
+        action: createOrderAction,
       },
       {
         path: '/order/:orderId',
         element: <Order />,
         loader: orderLoader,
-        errorElement: <Error />
-      }
-    ]
-  }
+        errorElement: <Error />,
+      },
+    ],
+  },
 ])
 
 function App() {
