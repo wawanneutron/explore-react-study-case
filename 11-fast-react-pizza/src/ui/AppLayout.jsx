@@ -2,8 +2,11 @@ import { Outlet, useNavigation } from 'react-router-dom'
 import CartOverview from '../features/cart/CartOverview'
 import Header from './Header'
 import Loader from './Loader'
+import { useSelector } from 'react-redux'
+import { getCart } from '../features/cart/cartSlice'
 
 function AppLayout() {
+  const cart = useSelector(getCart)
   const navigation = useNavigation()
   const isLoading = navigation.state === 'loading'
 
@@ -18,7 +21,7 @@ function AppLayout() {
         </main>
       </div>
 
-      <CartOverview />
+      {cart.length ? <CartOverview /> : null}
     </div>
   )
 }
