@@ -62,7 +62,9 @@ export default function App() {
   // custom hook useMovies
   const { movies, isLoading, error } = useMovies(query)
 
+  
   const [watched, setWatched] = useLocalStorageState([], 'watched')
+  
 
   function handleSelectMovie(id) {
     setSelectedId(() => (id === selectedId ? null : id))
