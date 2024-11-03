@@ -18,10 +18,19 @@ function LoginForm() {
 
     if (!email || !password) return
 
-    login({
-      email,
-      password,
-    })
+    login(
+      {
+        email,
+        password,
+      },
+      //? handling reset form
+      {
+        onSettled: () => {
+          setEmail('')
+          setPassword('')
+        },
+      }
+    )
   }
 
   return (
