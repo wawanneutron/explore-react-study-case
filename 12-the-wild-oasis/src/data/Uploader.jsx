@@ -7,6 +7,7 @@ import { subtractDates } from "../utils/helpers";
 import { bookings } from "./data-bookings";
 import { cabins } from "./data-cabins";
 import { guests } from "./data-guests";
+import styled from "styled-components";
 
 // const originalSettings = {
 //   minBookingLength: 3,
@@ -124,31 +125,42 @@ function Uploader() {
     await createBookings();
     setIsLoading(false);
   }
+  
+  
+  const Container = styled.div`
+    margin-top: auto;
+    background-color: var(--color-grey-100);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  `
 
   return (
-    <div
-      style={{
-        marginTop: "auto",
-        backgroundColor: "#e0e7ff",
-        padding: "8px",
-        borderRadius: "5px",
-        textAlign: "center",
-        display: "flex",
-        flexDirection: "column",
-        gap: "8px",
-      }}
-    >
+    <Container>
       <h3>SAMPLE DATA</h3>
 
-      <Button onClick={uploadAll} disabled={isLoading}>
+      <Button
+        onClick={uploadAll}
+        disabled={isLoading}
+        variation="secondary"
+        size="small"
+      >
         Upload ALL
       </Button>
 
-      <Button onClick={uploadBookings} disabled={isLoading}>
+      <Button 
+        onClick={uploadBookings} 
+        disabled={isLoading}
+        variation="secondary"
+        size="small"
+      >
         Upload bookings ONLY
       </Button>
-    </div>
-  );
+    </Container>
+  )
 }
 
 export default Uploader;
