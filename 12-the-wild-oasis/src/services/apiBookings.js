@@ -98,7 +98,7 @@ export async function getStaysTodayActivity() {
   // (stay.status === 'checked-in' && isToday(new Date(stay.endDate)))
 
   if (error) {
-    console.error(error);
+    console.error('error wan', error);
     throw new Error("Bookings could not get loaded");
   }
   return data;
